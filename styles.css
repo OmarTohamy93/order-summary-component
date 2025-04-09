@@ -1,0 +1,147 @@
+/* ## Colors */
+
+/* ### Primary */
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    /* ### Neutral */
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Desaturated-blue-loweropc: hsl(224, 23%, 55%, 5%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+@font-face {
+    font-family: RedHatDisplay-Medium;
+    src: url(./Assets/fonts/static/RedHatDisplay-Medium.ttf);
+}
+
+@font-face {
+    font-family: RedHatDisplay-Bold;
+    src: url(./Assets/fonts/static/RedHatDisplay-Bold.ttf);
+}
+
+@font-face {
+    font-family: RedHatDisplay-Black;
+    src: url(./Assets/fonts/static/RedHatDisplay-Black.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Pale-blue);
+}
+
+main {
+    width: 375px;
+    height: 600px;
+    margin: 250px auto;
+    background-color: var(--Very-pale-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    gap: 20px;
+    box-shadow: 3px 3px 20px var(--Dark-blue);
+}
+
+
+.img-section img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.title-section h1 {
+    text-align: center;
+    font-family: RedHatDisplay-Black;
+    color: var(--Dark-blue);
+}
+
+.parag-section p {
+    text-align: center;
+    padding: 0px 30px 10px;
+    font-family: RedHatDisplay-Medium;
+    color: var(--Desaturated-blue);
+}
+
+.plan-section {
+    background-color: var(--Desaturated-blue-loweropc);
+    border-radius: 10px;
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.plan {
+    width: 100%;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.plan h4 {
+    font-family: RedHatDisplay-Black;
+    color: var(--Dark-blue);
+    font-size: 0.8rem;
+}
+
+.plan p {
+    font-family: RedHatDisplay-Bold;
+    color: var(--Desaturated-blue);
+    font-size: 0.8rem;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+
+}
+
+.link a {
+    font-family: RedHatDisplay-Bold;
+    color: var(--Bright-blue);
+}
+
+.link a:hover {
+    cursor: pointer;
+}
+
+.button {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.button button {
+    font-family: RedHatDisplay-Bold;
+    background-color: var(--Bright-blue);
+    color: var(--Pale-blue);
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px var(--Bright-blue);
+    border: none;
+}
+
+.button button:hover {
+    cursor: pointer;
+}
+
+.cancel-link a {
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+    font-family: RedHatDisplay-Black;
+    font-size: 0.8rem;
+}
