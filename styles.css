@@ -9,7 +9,8 @@
     --Very-pale-blue: hsl(225, 100%, 98%);
     --Desaturated-blue: hsl(224, 23%, 55%);
     --Desaturated-blue-loweropc: hsl(224, 23%, 55%, 5%);
-    --Dark-blue: hsl(223, 47%, 23%);
+    --Dark-blue: hsl(223, 47%, 20%);
+    --Dark-blue-highopc: hsl(223, 47%, 80%);
 }
 
 @font-face {
@@ -101,13 +102,6 @@ main {
     font-size: 0.8rem;
 }
 
-.link {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    width: 100%;
-
-}
 
 .link a {
     font-family: RedHatDisplay-Bold;
@@ -116,6 +110,8 @@ main {
 
 .link a:hover {
     cursor: pointer;
+    text-decoration: none;
+    color: var(--Dark-blue);
 }
 
 .button {
@@ -137,6 +133,7 @@ main {
 
 .button button:hover {
     cursor: pointer;
+    background-color: var(--Dark-blue);
 }
 
 .cancel-link a {
@@ -144,4 +141,8 @@ main {
     color: var(--Desaturated-blue);
     font-family: RedHatDisplay-Black;
     font-size: 0.8rem;
+}
+
+.cancel-link a:hover{
+    color: var(--Dark-blue);
 }
